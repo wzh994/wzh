@@ -1,4 +1,5 @@
 #pragma once
+//#include"stdafx.h"
 #include<algorithm>
 #include<fstream>
 #include<iostream>
@@ -10,9 +11,10 @@ using namespace std;
 class Sudoku
 {
 public:
-	Sudoku();
+	Sudoku();//¹¹Ôìº¯Êý
 	void createSudoku(int n);
 	void openfile(const char* name);
+	// judge(int argc, char* argv[]);
 	void DFS(int count);
 	void solveSudoku(string path);
 	int range[20][20];
@@ -24,6 +26,7 @@ public:
 class Judge
 {
 public:
+	//Judge(int argc, char *argv[]);
 	char judge(int argc,char *argv[]);
 	int argc;
 	char **argv;
